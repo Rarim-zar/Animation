@@ -1,0 +1,62 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: 1ms;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes test{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: gray; left: 500px; top: 0px;}
+    50%{background-color: goldenrod; left: 500px; top: 500px;}
+    75%{background-color: blueviolet; left: 0px; top: 500px;}
+    100%{background-color: greenyellow; left: 0px; top: 0px; }
+}
+
+@keyframes test{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: gray; left: 500px; top: 0px;}
+    50%{background-color: goldenrod; left: 500px; top: 500px;}
+    75%{background-color: blueviolet; left: 0px; top: 500px;}
+    100%{background-color: greenyellow; left: 0px; top: 0px; }
+}
+
+.box2{
+    float: right;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: 1ms;
+    animation-name: test2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes test2{
+    0%{background-color: red; right: 0px; top: 0px;}
+    25%{background-color: gray; right: 500px; top: 0px;}
+    50%{background-color: goldenrod; right: 500px; top: 500px;}
+    75%{background-color: blueviolet; right: 0px; top: 500px;}
+    100%{background-color: greenyellow; right: 0px; top: 0px; }
+}
+
+@keyframes test2{
+    0%{background-color: red; right: 0px; top: 0px;}
+    25%{background-color: gray; right: 500px; top: 0px;}
+    50%{background-color: goldenrod; right: 500px; top: 500px;}
+    75%{background-color: blueviolet; right: 0px; top: 500px;}
+    100%{background-color: greenyellow; right: 0px; top: 0px; }
+}
